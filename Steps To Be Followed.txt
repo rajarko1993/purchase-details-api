@@ -1,0 +1,20 @@
+Steps To Be Followed :
+1. Create a project folder then unzip the file and run npm install in terminal
+2. Import the .sql file to create a database and then provide the details in config/development.json including db, port, md5 salt key, jwt secret key
+3. Open a terminal from the project folder and run npm install for the node_modules installation
+4. Run the application via node app.js or npm start
+
+
+Shared Files :
+1. purchase_details.sql - Database
+2. sample_products.xlsx - Sample Product Upload File
+3. Purchase Details API Collections.postman_collection.json - Postman API Collections
+
+
+Sample Users for Testing :
+email : raja.rko79@gmail.com / userone@gmail.com / usertwo@gmail.com
+password : 12345678
+
+
+Postman Collection Link :
+https://documenter.getpostman.com/view/7710544/Uz5NjDe3
