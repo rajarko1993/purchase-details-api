@@ -5,6 +5,8 @@ Steps To Be Followed :
 4. Run the application via node app.js or npm start
 
 
+Node Version : 10+
+
 Shared Files :
 1. purchase_details.sql - Database
 2. sample_products.xlsx - Sample Product Upload File
