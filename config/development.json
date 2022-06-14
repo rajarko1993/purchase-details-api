@@ -1,0 +1,17 @@
+{
+    "Common": {
+        "dbConfig": {
+            "user": "root",
+            "host": "localhost",
+            "password": "",
+            "database": "purchase_details"
+        },
+        "title": "Purchase Details",
+        "url": "http://localhost",
+        "port": "3000",
+        "salt": "!@#$%^&*"
+    },
+    "JwtToken": {
+        "secret": "12345678!@#$)(*&"
+    }
+}
