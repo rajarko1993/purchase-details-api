@@ -1,0 +1,219 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Purchase Details API Collections",
+		"_postman_id": "82e25ac5-72c4-f5af-af64-f08d654eb715",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/signup",
+			"request": {
+				"url": "http://localhost:3000/api/signup",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"first_name\" : \"User\",\n\"last_name\" : \"Two\",\n\"email\" : \"usertwo@gmail.com\",\n\"password\" : \"12345678\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/signin",
+			"request": {
+				"url": "http://localhost:3000/api/signin",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\" : \"raja.rko79@gmail.com\",\n\"password\" : \"12345678\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/checkToken",
+			"request": {
+				"url": "http://localhost:3000/api/checkToken",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjMsImZpcnN0X25hbWUiOiJVc2VyIiwibGFzdF9uYW1lIjoiVHdvIiwiZW1haWwiOiJ1c2VydHdvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMDY1NDc5ODg1YjZlZmY5NzFmMGFkYjliMzNkMGUxOTQiLCJjcmVhdGVkX29uIjoiMjAyMi0wNi0xMVQxMDozNzo0Ni4wMDBaIn0sImlhdCI6MTY1NDk0NTExOSwiZXhwIjoxNjU1MDMxNTE5fQ.oA2pkm3RYg3N9rlq8D9vR_c8C-TmlDy5xzUVEHzBzsU",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/createOrder",
+			"request": {
+				"url": "http://localhost:3000/api/createOrder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjEsImZpcnN0X25hbWUiOiJSYWoiLCJsYXN0X25hbWUiOiJLdW1hciIsImVtYWlsIjoicmFqYS5ya283OUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjA2NTQ3OTg4NWI2ZWZmOTcxZjBhZGI5YjMzZDBlMTk0IiwiY3JlYXRlZF9vbiI6IjIwMjItMDYtMTBUMTY6MTM6NTguMDAwWiJ9LCJpYXQiOjE2NTQ5OTk3NzcsImV4cCI6MTY1NTA4NjE3N30.wobHzDk9b86vL9sp1kNd2NB0gtQplWBtjfHz4G1cx8Q",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"product_id\": [3,4,5,2,1]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/updateOrder",
+			"request": {
+				"url": "http://localhost:3000/api/updateOrder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjMsImZpcnN0X25hbWUiOiJVc2VyIiwibGFzdF9uYW1lIjoiVHdvIiwiZW1haWwiOiJ1c2VydHdvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMDY1NDc5ODg1YjZlZmY5NzFmMGFkYjliMzNkMGUxOTQiLCJjcmVhdGVkX29uIjoiMjAyMi0wNi0xMVQxMDozNzo0Ni4wMDBaIn0sImlhdCI6MTY1NDk0NTExOSwiZXhwIjoxNjU1MDMxNTE5fQ.oA2pkm3RYg3N9rlq8D9vR_c8C-TmlDy5xzUVEHzBzsU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order_id\": 1,\n\t\"product_id\": [5,3,2,2,3,5]\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/cancelOrder",
+			"request": {
+				"url": "http://localhost:3000/api/cancelOrder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjMsImZpcnN0X25hbWUiOiJVc2VyIiwibGFzdF9uYW1lIjoiVHdvIiwiZW1haWwiOiJ1c2VydHdvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMDY1NDc5ODg1YjZlZmY5NzFmMGFkYjliMzNkMGUxOTQiLCJjcmVhdGVkX29uIjoiMjAyMi0wNi0xMVQxMDozNzo0Ni4wMDBaIn0sImlhdCI6MTY1NDk0NTExOSwiZXhwIjoxNjU1MDMxNTE5fQ.oA2pkm3RYg3N9rlq8D9vR_c8C-TmlDy5xzUVEHzBzsU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"order_id\" : 1\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/listOrder",
+			"request": {
+				"url": "http://localhost:3000/api/listOrder",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjMsImZpcnN0X25hbWUiOiJVc2VyIiwibGFzdF9uYW1lIjoiVHdvIiwiZW1haWwiOiJ1c2VydHdvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMDY1NDc5ODg1YjZlZmY5NzFmMGFkYjliMzNkMGUxOTQiLCJjcmVhdGVkX29uIjoiMjAyMi0wNi0xMVQxMDozNzo0Ni4wMDBaIn0sImlhdCI6MTY1NDk0NTExOSwiZXhwIjoxNjU1MDMxNTE5fQ.oA2pkm3RYg3N9rlq8D9vR_c8C-TmlDy5xzUVEHzBzsU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"status\": \"\",\r\n\t\"sort_by\": \"desc\",\r\n\t\"order_by\": \"order_id\",\r\n\t\"page\": 1,\r\n\t\"limit\": 5,\r\n\t\"search\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/listOrderDetails",
+			"request": {
+				"url": "http://localhost:3000/api/listOrderDetails",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjMsImZpcnN0X25hbWUiOiJVc2VyIiwibGFzdF9uYW1lIjoiVHdvIiwiZW1haWwiOiJ1c2VydHdvQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiMDY1NDc5ODg1YjZlZmY5NzFmMGFkYjliMzNkMGUxOTQiLCJjcmVhdGVkX29uIjoiMjAyMi0wNi0xMVQxMDozNzo0Ni4wMDBaIn0sImlhdCI6MTY1NDk0NTExOSwiZXhwIjoxNjU1MDMxNTE5fQ.oA2pkm3RYg3N9rlq8D9vR_c8C-TmlDy5xzUVEHzBzsU",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"status\": \"\",\r\n\t\"sort_by\": \"desc\",\r\n\t\"order_by\": \"order_details_status\",\r\n\t\"page\": 4,\r\n\t\"limit\": 5,\r\n\t\"search\": \"\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/listOrderProductCountByDate",
+			"request": {
+				"url": "http://localhost:3000/api/listOrderProductCountByDate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2RhdGEiOnsiaWQiOjEsImZpcnN0X25hbWUiOiJSYWoiLCJsYXN0X25hbWUiOiJLdW1hciIsImVtYWlsIjoicmFqYS5ya283OUBnbWFpbC5jb20iLCJwYXNzd29yZCI6IjA2NTQ3OTg4NWI2ZWZmOTcxZjBhZGI5YjMzZDBlMTk0IiwiY3JlYXRlZF9vbiI6IjIwMjItMDYtMTBUMTY6MTM6NTguMDAwWiJ9LCJpYXQiOjE2NTQ5OTk3NzcsImV4cCI6MTY1NTA4NjE3N30.wobHzDk9b86vL9sp1kNd2NB0gtQplWBtjfHz4G1cx8Q",
+						"description": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"status\": \"\",\r\n    \"sort_by\": \"desc\",\r\n    \"order_by\": \"product_sku\",\r\n    \"group_by\": \"filter_date\",\r\n    \"page\": 1,\r\n    \"limit\": 10,\r\n    \"start_date\": \"2021/12/31\",\r\n    \"end_date\": \"2022/12/31\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

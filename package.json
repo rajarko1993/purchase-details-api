@@ -1,0 +1,37 @@
+{
+  "name": "purchase_details",
+  "version": "1.0.0",
+  "description": "Purchase Details",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [
+    "Purchase Details"
+  ],
+  "author": "Raj Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.2",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "joi": "^14.3.1",
+    "joi-date-extensions": "^1.2.0",
+    "jsonwebtoken": "^8.5.0",
+    "md5": "^2.2.1",
+    "mime": "^2.4.0",
+    "moment": "^2.24.0",
+    "multer": "^1.4.1",
+    "mysql": "^2.16.0",
+    "read-excel-file": "^5.3.4",
+    "underscore": "^1.13.2",
+    "winston": "^3.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
